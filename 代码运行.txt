@@ -1,0 +1,10 @@
+一、所需实验环境
+torch
+transformers
+bert4torch
+二、模型
+PromptTable【利用prompt思想构建的模型】
+三、模型复现
+1.模型训练：PT.py为训练代码，分别将训练集切割为5折，训练5个模型，GuNERdata为分割后的数据集，通过修改代码中的数据集地址以及保存模型名，分别训练5个模型，保存在bestmodel文件中。
+2.模型融合：依次运行[融合.ipynb]中的代码块，生成最终预测文件
+
